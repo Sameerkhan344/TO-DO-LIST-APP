@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgb(166, 169, 168); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+body::-webkit-scrollbar {
+  background-color: transparent;
+}
+base::-webkit-scrollbar-thumb {
+  background-color: aqua;
+}
+.app-wrraper {
+  min-width: 500px;
+  height: 600px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow-y: hidden;
+  box-shadow: 20px 20px 50px rgb(64, 61, 61);
+  background-color: rgb(64, 61, 61);
+}
+.app-wrraper .loading-page {
+  background-color: rgba(0, 255, 195, 0.256);
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 3;
+  justify-content: center;
+  overflow: hidden;
+}
+.appname {
+  font: bold;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgb(0, 255, 174);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.startbutton {
+  background-color: rgb(64, 61, 61);
+  color: rgb(0, 255, 195);
+  border-radius: 5px;
+  padding: 1vw 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  background-color: rgb(0, 255, 174);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 2vw;
+}
+.nav h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  font-weight: 800;
+  color: rgb(64, 61, 61);
+}
+.nav ul {
+  display: flex;
+}
+.nav input {
+  border: 1px solid rgba(64, 61, 61, 0.886);
+  outline: 1px solid rgba(64, 61, 61, 0.886);
+  background-color: transparent;
+}
+.nav input::-webkit-input-placeholder {
+  color: rgb(64, 61, 61);
+  text-align: center;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+form {
+  padding: 2vw 1vw;
+  gap: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  /* overflow: hidden; */
+}
+.forminput {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form .input {
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  outline: 1px solid whitesmoke;
+  padding: 5px;
+  color: white;
+}
+.input::-webkit-input-placeholder {
+  text-align: start;
+  padding: 1vw;
+}
+.homepagebutton {
+  background-color: rgb(0, 255, 195);
+  color: rgba(64, 61, 61, 0.934);
+  padding: 0.9vw 2vw;
+}
+.listbutton {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.list {
+  background-color: rgb(0, 255, 195);
+  margin: 10px;
+  border-radius: 4px;
+}
+.check {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delete {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todolist {
+  /* background-color: antiquewhite; */
+  overflow-y: scroll;
+  /* overflow: hidden;
+   position: relative; */
+}
+
+@media (max-width: 468px) {
+  .app-wrraper {
+    min-width: 350px;
+    overflow-y: hidden;
+  }
+  .nav {
+    padding: 4vw 2vw;
+  }
+  .nav h1 {
+    font-size: 1.5rem;
+    padding: 0vw 4vw;
+  }
+  form {
+    padding: 6vw 4vw;
+  }
+  .homepagebutton {
+    padding: 0.9vw 2vw;
+  }
+}
